@@ -7,7 +7,7 @@ import { Check } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Notre expertise',
   description:
-    'Extrusion soufflage EBM, injection soufflage et ISBM, conseil industriel et formation technique : l’expertise plasturgie d’ERPACK SAS.',
+    'Extrusion soufflage EBM, injection soufflage et ISBM, conseil industriel et formation technique : l\u2019expertise plasturgie d\u2019ERPACK SAS.',
 }
 
 const sections = [
@@ -17,7 +17,7 @@ const sections = [
     title: 'Extrusion soufflage',
     image: '/images/extrusion-soufflage.png',
     paragraphs: [
-      'L’extrusion soufflage est au cœur de nombreuses applications industrielles : flacons, bidons techniques, emballages industriels et contenants spécifiques.',
+      'L\u2019extrusion soufflage est au cœur de nombreuses applications industrielles : flacons, bidons techniques, emballages industriels et contenants spécifiques.',
       'Nous accompagnons nos clients dans le choix des solutions adaptées à leurs contraintes de production : cadence, géométrie des pièces, réduction matière, qualité de soufflage, optimisation énergétique et évolutivité des équipements.',
     ],
   },
@@ -27,7 +27,7 @@ const sections = [
     title: 'Injection soufflage',
     image: '/images/injection-soufflage.png',
     paragraphs: [
-      'Les procédés d’injection soufflage et d’ISBM exigent une maîtrise technique élevée, tant sur les aspects machines que sur les paramètres process. Ils sont particulièrement adaptés aux contenants à forte exigence qualitative : cosmétique, pharmaceutique, alimentaire ou packaging technique.',
+      'Les procédés d\u2019injection soufflage et d\u2019ISBM exigent une maîtrise technique élevée, tant sur les aspects machines que sur les paramètres process. Ils sont particulièrement adaptés aux contenants à forte exigence qualitative : cosmétique, pharmaceutique, alimentaire ou packaging technique.',
     ],
     list: [
       'Analyse de faisabilité',
@@ -46,7 +46,7 @@ const sections = [
     title: 'Conseil & accompagnement industriel',
     image: '/images/conseil.png',
     paragraphs: [
-      'Chaque projet industriel est unique. ERPACK SAS privilégie une approche d’accompagnement sur mesure, fondée sur l’écoute, l’analyse technique et la recherche d’efficacité opérationnelle.',
+      'Chaque projet industriel est unique. ERPACK SAS privilégie une approche d\u2019accompagnement sur mesure, fondée sur l\u2019écoute, l\u2019analyse technique et la recherche d\u2019efficacité opérationnelle.',
     ],
     list: [
       'Étude technique',

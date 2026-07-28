@@ -3,10 +3,10 @@ import { Check } from 'lucide-react'
 
 const domains = [
   'Optimisation de cadence sur ligne de soufflage',
-  'Accompagnement au démarrage d’équipements industriels',
-  'Formation technique d’opérateurs et de régleurs',
+  'Accompagnement au démarrage d\u2019équipements industriels',
+  'Formation technique d\u2019opérateurs et de régleurs',
   'Réduction des pertes matière et optimisation process',
-  'Audit technique et accompagnement à l’industrialisation',
+  'Audit technique et accompagnement à l\u2019industrialisation',
   'Expertise dédiée aux équipements ASB NISSEI / AOKI',
 ]
 

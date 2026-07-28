@@ -6,16 +6,16 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Qui sommes-nous',
   description:
-    'Découvrez le parcours de Gilles Guichon, fondateur d’ERPACK SAS, et 40 ans d’expertise dédiée à la plasturgie et au packaging plastique.',
+    'Découvrez le parcours de Gilles Guichon, fondateur d\u2019ERPACK SAS, et 40 ans d\u2019expertise dédiée à la plasturgie et au packaging plastique.',
 }
 
 const timeline = [
   { year: '1978 – 1988', text: 'Dix ans passés chez PRP à Oyonnax, au cœur de la Plastic Vallée.' },
   { year: '1988 – 1994', text: 'Directeur de site chez SPAC Bretagne : fabrication, flaconnage, pharmacie et alimentaire.' },
   { year: '1994 – 2004', text: 'Création et direction générale des Flaconnages azuréens pendant dix ans.' },
-  { year: '2004 – 2012', text: 'Création de Plastrade Monaco ; installation d’usines de flaconnage (Maghreb, Pologne, Italie, Roumanie, etc.).' },
+  { year: '2004 – 2012', text: 'Création de Plastrade Monaco ; installation d\u2019usines de flaconnage (Maghreb, Pologne, Italie, Roumanie, etc.).' },
   { year: '2012 – 2021', text: 'Directeur de production puis directeur industriel chez Qualiform.' },
-  { year: '2021', text: 'Création de la société ERPACK SAS, dont il est l’actuel Président directeur général.' },
+  { year: '2021', text: 'Création de la société ERPACK SAS, dont il est l\u2019actuel Président directeur général.' },
 ]
 
 export default function QuiSommesNousPage() {
@@ -24,7 +24,7 @@ export default function QuiSommesNousPage() {
       <PageHero
         eyebrow="Qui sommes-nous"
         title="Une vocation industrielle dédiée à la plasturgie"
-        description="ERPACK SAS s’appuie sur le parcours et l’expertise reconnue de son fondateur, Gilles Guichon."
+        description="ERPACK SAS s\u2019appuie sur le parcours et l\u2019expertise reconnue de son fondateur, Gilles Guichon."
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -44,8 +44,7 @@ export default function QuiSommesNousPage() {
               </div>
             </div>
             <p className="mt-8 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Né en 1960, originaire de la Plastic Vallée, {site.president}
-              {' '}a répondu présent à une
+              Né en 1960, originaire de la Plastic Vallée, {site.president} a répondu présent à une
               vocation industrielle naturelle dédiée à la plasturgie. Au fil de plus de quatre
               décennies, il a bâti une expertise pointue du flaconnage et de l&apos;industrialisation
               packaging, de la production à la direction de sites et à l&apos;installation d&apos;usines à
@@ -77,7 +76,7 @@ export default function QuiSommesNousPage() {
 
       <CtaBanner
         title="Mettons cette expertise au service de vos projets"
-        text="De l’étude à la mise en production, ERPACK SAS accompagne vos équipes avec une exigence terrain."
+        text="De l\u2019étude à la mise en production, ERPACK SAS accompagne vos équipes avec une exigence terrain."
       />
     </>
   )

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const cases = [
-  'Développement d’un nouveau projet de packaging plastique',
+  'Développement d\u2019un nouveau projet de packaging plastique',
   'Optimisation de process de production',
   'Amélioration de productivité et réduction des pertes matière',
   'Expertise extrusion soufflage',
@@ -26,7 +26,7 @@ export default function VotreProjetPage() {
       <PageHero
         eyebrow="Votre projet"
         title="Parlons de vous"
-        description="Un besoin clairement défini ou encore à l’étude ? Nous privilégions un premier échange simple, pragmatique et orienté résultats."
+        description="Un besoin clairement défini ou encore à l\u2019étude ? Nous privilégions un premier échange simple, pragmatique et orienté résultats."
       />
 
       <section className="bg-background py-20 lg:py-28">

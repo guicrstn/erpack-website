@@ -6,12 +6,12 @@ import { Gallery, type GalleryItem } from '@/components/gallery'
 export const metadata: Metadata = {
   title: 'Photothèque',
   description:
-    'Machines, procédés et réalisations : découvrez en images l’univers industriel du packaging plastique accompagné par ERPACK SAS.',
+    'Machines, procédés et réalisations : découvrez en images l\u2019univers industriel du packaging plastique accompagné par ERPACK SAS.',
 }
 
 const items: GalleryItem[] = [
-  { src: '/images/hero-machine.png', alt: 'Machine d’extrusion soufflage', caption: 'Ligne d’extrusion soufflage', wide: true },
-  { src: '/images/extrusion-soufflage.png', alt: 'Procédé d’extrusion soufflage', caption: 'Procédé EBM en action' },
+  { src: '/images/hero-machine.png', alt: 'Machine d\u2019extrusion soufflage', caption: 'Ligne d\u2019extrusion soufflage', wide: true },
+  { src: '/images/extrusion-soufflage.png', alt: 'Procédé d\u2019extrusion soufflage', caption: 'Procédé EBM en action' },
   { src: '/images/injection-soufflage.png', alt: 'Préformes et flacons PET', caption: 'Préformes & ISBM' },
   { src: '/images/gallery-bottles.png', alt: 'Flacons plastiques', caption: 'Flaconnage cosmétique & pharmaceutique' },
   { src: '/images/gallery-mold.png', alt: 'Moule de soufflage', caption: 'Outillage de soufflage de précision' },
