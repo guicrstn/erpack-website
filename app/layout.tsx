@@ -20,11 +20,11 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL('https://erpacksas.com'),
   title: {
-    default: 'ERPACK SAS — Expertise en plasturgie pour l\u2019emballage',
+    default: 'ERPACK SAS — Expertise en plasturgie pour l’emballage',
     template: '%s — ERPACK SAS',
   },
   description:
-    'ERPACK SAS, agent commercial de Delta Engineering pour la France. 40 ans d\u2019expertise en extrusion soufflage, injection soufflage et ISBM pour le packaging plastique industriel.',
+    'ERPACK SAS, agent commercial de Delta Engineering pour la France. 40 ans d’expertise en extrusion soufflage, injection soufflage et ISBM pour le packaging plastique industriel.',
   generator: 'v0.app',
   keywords: [
     'extrusion soufflage',
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     'ERPACK SAS',
   ],
   openGraph: {
-    title: 'ERPACK SAS — Expertise en plasturgie pour l\u2019emballage',
+    title: 'ERPACK SAS — Expertise en plasturgie pour l’emballage',
     description:
-      '40 ans d\u2019expertise en extrusion soufflage, injection soufflage et ISBM pour le packaging plastique industriel.',
+      '40 ans d’expertise en extrusion soufflage, injection soufflage et ISBM pour le packaging plastique industriel.',
     type: 'website',
     locale: 'fr_FR',
   },

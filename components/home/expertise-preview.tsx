@@ -10,7 +10,7 @@ const cards = [
   },
   {
     title: 'Injection soufflage & ISBM',
-    text: 'Contenants à forte exigence qualitative pour la cosmétique, la pharmacie et l\u2019alimentaire.',
+    text: 'Contenants à forte exigence qualitative pour la cosmétique, la pharmacie et l’alimentaire.',
     image: '/images/injection-soufflage.png',
   },
   {

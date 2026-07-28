@@ -6,7 +6,7 @@ import { FlaskConical, Pill, Apple, Boxes, SprayCan, Factory } from 'lucide-reac
 export const metadata: Metadata = {
   title: 'Références',
   description:
-    'Secteurs accompagnés et partenaires technologiques d\u2019ERPACK SAS : cosmétique, pharmacie, alimentaire, packaging technique, ASB NISSEI, AOKI et Delta Engineering.',
+    'Secteurs accompagnés et partenaires technologiques d’ERPACK SAS : cosmétique, pharmacie, alimentaire, packaging technique, ASB NISSEI, AOKI et Delta Engineering.',
 }
 
 const sectors = [
@@ -22,8 +22,8 @@ const partners = ['Delta Engineering', 'ASB NISSEI', 'AOKI', 'Consilhom']
 
 const stats = [
   { value: '40+', label: "années d'expérience terrain" },
-  { value: '4', label: 'pôles d\u2019expertise complémentaires' },
-  { value: 'International', label: 'usines installées à l\u2019étranger' },
+  { value: '4', label: 'pôles d’expertise complémentaires' },
+  { value: 'International', label: 'usines installées à l’étranger' },
 ]
 
 export default function ReferencesPage() {
@@ -32,7 +32,7 @@ export default function ReferencesPage() {
       <PageHero
         eyebrow="Références"
         title="Une expertise reconnue au service de nombreux secteurs"
-        description="ERPACK SAS accompagne les industriels du packaging plastique, en France comme à l\u2019international."
+        description="ERPACK SAS accompagne les industriels du packaging plastique, en France comme à l’international."
       />
 
       <section className="bg-background py-20 lg:py-28">

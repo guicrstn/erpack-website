@@ -4,7 +4,7 @@ import { site } from '@/lib/site'
 
 export function CtaBanner({
   title = 'Vous avez un projet packaging industriel ?',
-  text = 'ERPACK SAS vous accompagne dans l\u2019étude, l\u2019optimisation et la mise en œuvre de vos solutions industrielles.',
+  text = 'ERPACK SAS vous accompagne dans l’étude, l’optimisation et la mise en œuvre de vos solutions industrielles.',
 }: {
   title?: string
   text?: string

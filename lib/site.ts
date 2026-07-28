@@ -1,6 +1,6 @@
 export const site = {
   name: 'ERPACK SAS',
-  tagline: 'La connaissance de la plasturgie pour l\u2019emballage',
+  tagline: 'La connaissance de la plasturgie pour l’emballage',
   email: 'contact@erpacksas.com',
   phone: '07 86 64 42 25',
   phoneHref: '+33786644225',

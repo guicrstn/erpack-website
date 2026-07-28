@@ -4,17 +4,17 @@ const items = [
   {
     icon: Award,
     title: 'Une expertise industrielle éprouvée',
-    text: 'Plus de quarante ans d\u2019expérience dans les technologies de soufflage et d\u2019industrialisation packaging.',
+    text: 'Plus de quarante ans d’expérience dans les technologies de soufflage et d’industrialisation packaging.',
   },
   {
     icon: Wrench,
     title: 'Spécialiste ASB / AOKI',
-    text: 'Une expertise reconnue sur les équipements ASB et AOKI pour l\u2019optimisation, la formation et l\u2019accompagnement technique.',
+    text: 'Une expertise reconnue sur les équipements ASB et AOKI pour l’optimisation, la formation et l’accompagnement technique.',
   },
   {
     icon: Route,
     title: 'Accompagnement de projets',
-    text: 'De l\u2019étude initiale à la mise en production, nous accompagnons vos équipes à chaque étape.',
+    text: 'De l’étude initiale à la mise en production, nous accompagnons vos équipes à chaque étape.',
   },
   {
     icon: HardHat,
