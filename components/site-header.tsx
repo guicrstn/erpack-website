@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Phone } from 'lucide-react'
@@ -36,18 +37,15 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-20 lg:px-8">
-        <Link href="/" className="group flex items-center gap-3" aria-label={`${site.name} — accueil`}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-primary-foreground font-serif text-lg font-semibold">
-            E
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="text-lg font-semibold tracking-tight text-foreground">
-              {site.name}
-            </span>
-            <span className="hidden text-[11px] font-medium uppercase tracking-widest text-muted-foreground sm:block">
-              Plasturgie · Packaging
-            </span>
-          </span>
+        <Link href="/" className="group flex items-center" aria-label={`${site.name} — accueil`}>
+          <Image
+            src="/images/erpack-logo.png"
+            alt={`${site.name} — études réalisations packaging`}
+            width={200}
+            height={80}
+            priority
+            className="h-11 w-auto lg:h-14"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Menu principal">
