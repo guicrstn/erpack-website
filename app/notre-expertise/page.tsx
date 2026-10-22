@@ -15,7 +15,7 @@ const sections = [
     id: 'extrusion-soufflage',
     tag: 'EBM',
     title: 'Extrusion soufflage',
-    image: '/images/extrusion-soufflage.jpg',
+    image: '/images/extrusion-soufflage.png',
     paragraphs: [
       'L\u2019extrusion soufflage est au cœur de nombreuses applications industrielles, notamment pour la fabrication de flacons, bidons techniques, emballages industriels et contenants spécifiques.',
       'ERPACK SAS accompagne ses clients dans le choix des solutions techniques adaptées à leurs contraintes de production : cadence, géométrie des pièces, réduction matière, qualité de soufflage, optimisation énergétique ou encore évolutivité des équipements.',

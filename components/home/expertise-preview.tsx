@@ -6,7 +6,7 @@ const cards = [
   {
     title: 'Extrusion soufflage EBM',
     text: 'Flacons, bidons techniques et emballages industriels : cadence, réduction matière et optimisation énergétique.',
-    image: '/images/extrusion-soufflage.jpg',
+    image: '/images/extrusion-soufflage.png',
   },
   {
     title: 'Injection soufflage & ISBM',
