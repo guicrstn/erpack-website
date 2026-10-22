@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { navItems, site } from '@/lib/site'
@@ -8,12 +9,19 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-md bg-primary text-primary-foreground font-serif text-lg font-semibold">
-                E
-              </span>
-              <span className="text-lg font-semibold tracking-tight">{site.name}</span>
-            </div>
+            <Link
+              href="/"
+              aria-label={`${site.name} — accueil`}
+              className="inline-flex rounded-xl bg-white px-4 py-3 shadow-sm"
+            >
+              <Image
+                src="/images/erpack-logo.png"
+                alt={`${site.name} — études réalisations packaging`}
+                width={200}
+                height={80}
+                className="h-14 w-auto"
+              />
+            </Link>
             <p className="mt-4 max-w-md text-pretty text-sm leading-relaxed text-navy-foreground/70">
               {site.tagline}. Agent commercial de {site.partner}{' '}
               pour la France, ERPACK SAS met
