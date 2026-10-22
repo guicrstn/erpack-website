@@ -6,7 +6,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Qui sommes-nous',
   description:
-    'Découvrez le parcours de Gilles Guichon, fondateur d\u2019ERPACK SAS, et 40 ans d\u2019expertise dédiée à la plasturgie et au packaging plastique.',
+    'Découvrez le parcours de Gilles GUICHON, fondateur d\u2019ERPACK SAS, et 40 ans d\u2019expertise dédiée à la plasturgie et au packaging plastique.',
 }
 
 const timeline = [
@@ -24,7 +24,7 @@ export default function QuiSommesNousPage() {
       <PageHero
         eyebrow="Qui sommes-nous"
         title="Une vocation industrielle dédiée à la plasturgie"
-        description="ERPACK SAS s\u2019appuie sur le parcours et l\u2019expertise reconnue de son fondateur, Gilles Guichon."
+        description="ERPACK SAS s\u2019appuie sur le parcours et l\u2019expertise reconnue de son fondateur, Gilles GUICHON."
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -44,7 +44,7 @@ export default function QuiSommesNousPage() {
               </div>
             </div>
             <p className="mt-8 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Né en 1960, originaire de la Plastic Vallée, {site.president} a répondu présent à une
+              Né en 1960, originaire de la Plastic Vallée, {`${site.president} `}a répondu présent à une
               vocation industrielle naturelle dédiée à la plasturgie. Au fil de plus de quatre
               décennies, il a bâti une expertise pointue du flaconnage et de l&apos;industrialisation
               packaging, de la production à la direction de sites et à l&apos;installation d&apos;usines à
