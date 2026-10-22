@@ -9,6 +9,7 @@ export type GalleryItem = {
   alt: string
   caption: string
   wide?: boolean
+  fit?: 'cover' | 'contain'
 }
 
 export function Gallery({ items }: { items: GalleryItem[] }) {
@@ -41,23 +42,25 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:gap-5">
+      <div className="grid grid-flow-dense grid-cols-2 gap-4 md:grid-cols-3 lg:gap-5">
         {items.map((item, i) => (
           <button
             key={item.src}
             type="button"
             onClick={() => setActive(i)}
-            className={`group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-card ${
-              item.wide ? 'col-span-2' : ''
-            }`}
+            className={`group relative overflow-hidden rounded-2xl border border-border ${
+              item.wide ? 'col-span-2 aspect-[8/3]' : 'aspect-[4/3]'
+            } ${item.fit === 'contain' ? 'bg-white' : 'bg-card'}`}
             aria-label={`Agrandir : ${item.caption}`}
           >
             <Image
               src={item.src}
               alt={item.alt}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 50vw, 33vw"
+              className={`transition-transform duration-500 group-hover:scale-105 ${
+                item.fit === 'contain' ? 'object-contain p-2' : 'object-cover'
+              }`}
+              sizes={item.wide ? '(max-width: 768px) 100vw, 66vw' : '(max-width: 768px) 50vw, 33vw'}
             />
             <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-4 text-left text-sm font-medium text-navy-foreground opacity-0 transition-opacity group-hover:opacity-100">
               {item.caption}
