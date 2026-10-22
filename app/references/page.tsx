@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { PageHero } from '@/components/page-hero'
 import { CtaBanner } from '@/components/cta-banner'
 import { FlaskConical, Pill, Apple, Boxes, SprayCan, Factory } from 'lucide-react'
@@ -32,7 +33,7 @@ export default function ReferencesPage() {
       <PageHero
         eyebrow="Références"
         title="Une expertise reconnue au service de nombreux secteurs"
-        description="ERPACK SAS accompagne les industriels du packaging plastique, en France comme à l\u2019international."
+        description="ERPACK SAS accompagne les industriels du packaging plastique, en France comme à l’international."
       />
 
       <section className="bg-background py-20 lg:py-28">
@@ -84,6 +85,51 @@ export default function ReferencesPage() {
                 </span>
               ))}
             </div>
+
+            <article className="mt-12 overflow-hidden rounded-2xl border border-border bg-card">
+              <div className="grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-2">
+                <div className="flex flex-col gap-4">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                    Delta Engineering
+                  </p>
+                  <h3 className="font-serif text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                    Ensacheuses automatiques DB100 · DB112 · DB122 · DB142
+                  </h3>
+                  <p className="text-pretty leading-relaxed text-muted-foreground">
+                    Les modèles DB100, DB112, DB122 et DB142 forment une gamme d’ensacheuses
+                    entièrement automatiques pour bouteilles vides. Le choix du modèle dépend des
+                    dimensions de sac dont vous avez besoin : chaque modèle réalise des sacs dans une
+                    plage de dimensions différente.
+                  </p>
+                  <ul className="flex flex-wrap gap-2" aria-label="Modèles disponibles">
+                    {['DB100', 'DB112', 'DB122', 'DB142'].map((model) => (
+                      <li
+                        key={model}
+                        className="rounded-md bg-secondary px-3 py-1 font-mono text-sm font-semibold text-primary"
+                      >
+                        {model}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <Image
+                    src="/images/delta-ensacheuse-1.png"
+                    alt="Ensacheuse automatique Delta Engineering, vue de trois quarts avec convoyeur d’entrée"
+                    width={560}
+                    height={310}
+                    className="h-auto w-full"
+                  />
+                  <Image
+                    src="/images/delta-ensacheuse-2.png"
+                    alt="Ensacheuse automatique Delta Engineering, modèle grand format avec dérouleur de film"
+                    width={695}
+                    height={374}
+                    className="h-auto w-full"
+                  />
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
