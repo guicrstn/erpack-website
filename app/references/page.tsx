@@ -21,6 +21,33 @@ const sectors = [
 
 const partners = ['Delta Engineering', 'ASB NISSEI', 'AOKI', 'Consilhom']
 
+const partnerPresentations = [
+  {
+    name: 'ASB NISSEI',
+    title: 'Injection soufflage bi-orientation en une étape',
+    text: 'Constructeur japonais de référence, ASB NISSEI conçoit des machines d’injection soufflage bi-orientation (ISBM) en une étape : la préforme est injectée puis soufflée sur la même machine. Une technologie idéale pour les flacons PET de haute qualité esthétique, en cosmétique, pharmacie et alimentaire.',
+    tags: ['ISBM 1 étape', 'PET', 'Cosmétique', 'Pharmacie'],
+    image: '/images/injection-soufflage.png',
+    alt: 'Préformes et bouteilles PET transparentes issues d’une ligne d’injection soufflage',
+  },
+  {
+    name: 'AOKI',
+    title: 'Le savoir-faire japonais de l’ISBM compact',
+    text: 'Pionnier de l’injection soufflage bi-orientation en une étape, AOKI propose des machines compactes et précises, particulièrement adaptées aux petites et moyennes séries, aux pots et flacons à col large et aux contenants à parois fines.',
+    tags: ['ISBM 1 étape', 'Col large', 'Petites séries'],
+    image: '/images/partner-aoki.png',
+    alt: 'Plateau rotatif d’une machine d’injection soufflage avec pots et flacons PET',
+  },
+  {
+    name: 'Consilhom',
+    title: 'Formation et certification en plasturgie',
+    text: 'Organisme de formation spécialisé en plasturgie, Consilhom accompagne la montée en compétences des équipes : conduite d’équipement, réglage, coordination de ligne et management. Les formations, certifiantes (CQP / CCP), peuvent être réalisées directement dans vos locaux.',
+    tags: ['CQP / CCP', 'Réglage', 'Conduite de ligne', 'Sur site'],
+    image: '/images/formation.png',
+    alt: 'Formateur expliquant un pupitre de commande de machine à des opérateurs',
+  },
+]
+
 const stats = [
   { value: '40+', label: "années d'expérience terrain" },
   { value: '4', label: 'pôles d\u2019expertise complémentaires' },
@@ -130,6 +157,48 @@ export default function ReferencesPage() {
                 </div>
               </div>
             </article>
+
+            {partnerPresentations.map((partner, index) => (
+              <article
+                key={partner.name}
+                className="mt-8 overflow-hidden rounded-2xl border border-border bg-card"
+              >
+                <div className="grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-2">
+                  <div
+                    className={`flex flex-col gap-4 ${index % 2 === 0 ? 'lg:order-2' : ''}`}
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-widest text-accent">
+                      {partner.name}
+                    </p>
+                    <h3 className="font-serif text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                      {partner.title}
+                    </h3>
+                    <p className="text-pretty leading-relaxed text-muted-foreground">
+                      {partner.text}
+                    </p>
+                    <ul className="flex flex-wrap gap-2" aria-label={`Points clés ${partner.name}`}>
+                      {partner.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="rounded-md bg-secondary px-3 py-1 text-sm font-semibold text-primary"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                    <Image
+                      src={partner.image}
+                      alt={partner.alt}
+                      fill
+                      sizes="(min-width: 1024px) 560px, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

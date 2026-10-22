@@ -15,7 +15,8 @@ export function SiteFooter() {
               <span className="text-lg font-semibold tracking-tight">{site.name}</span>
             </div>
             <p className="mt-4 max-w-md text-pretty text-sm leading-relaxed text-navy-foreground/70">
-              {site.tagline}. Agent commercial de {site.partner} pour la France, ERPACK SAS met
+              {site.tagline}. Agent commercial de {site.partner}{' '}
+              pour la France, ERPACK SAS met
               40 ans d&apos;expertise industrielle au service de vos projets d&apos;emballage plastique.
             </p>
           </div>
