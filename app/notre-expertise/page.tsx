@@ -17,8 +17,9 @@ const sections = [
     title: 'Extrusion soufflage',
     image: '/images/extrusion-soufflage.png',
     paragraphs: [
-      'L\u2019extrusion soufflage est au cœur de nombreuses applications industrielles : flacons, bidons techniques, emballages industriels et contenants spécifiques.',
-      'Nous accompagnons nos clients dans le choix des solutions adaptées à leurs contraintes de production : cadence, géométrie des pièces, réduction matière, qualité de soufflage, optimisation énergétique et évolutivité des équipements.',
+      'L\u2019extrusion soufflage est au cœur de nombreuses applications industrielles, notamment pour la fabrication de flacons, bidons techniques, emballages industriels et contenants spécifiques.',
+      'ERPACK SAS accompagne ses clients dans le choix des solutions techniques adaptées à leurs contraintes de production : cadence, géométrie des pièces, réduction matière, qualité de soufflage, optimisation énergétique ou encore évolutivité des équipements.',
+      'Notre expérience permet d\u2019identifier rapidement les points critiques d\u2019un projet et de proposer des solutions réalistes, directement applicables en environnement industriel.',
     ],
   },
   {
@@ -27,7 +28,9 @@ const sections = [
     title: 'Injection soufflage',
     image: '/images/injection-soufflage.png',
     paragraphs: [
-      'Les procédés d\u2019injection soufflage et d\u2019ISBM exigent une maîtrise technique élevée, tant sur les aspects machines que sur les paramètres process. Ils sont particulièrement adaptés aux contenants à forte exigence qualitative : cosmétique, pharmaceutique, alimentaire ou packaging technique.',
+      'Les procédés d\u2019injection soufflage et d\u2019ISBM exigent une maîtrise technique élevée, tant sur les aspects machines que sur les paramètres process.',
+      'Ces technologies sont particulièrement adaptées à la production de contenants à forte exigence qualitative : cosmétique, pharmaceutique, alimentaire ou packaging technique.',
+      'Grâce à une expertise reconnue sur les équipements ASB NISSEI et AOKI, ERPACK SAS accompagne les industriels dans :',
     ],
     list: [
       'Analyse de faisabilité',
@@ -37,8 +40,9 @@ const sections = [
       'Montée en cadence',
       'Accompagnement lors des mises en production',
     ],
-    listNote:
-      'Grâce à une expertise reconnue sur les équipements ASB NISSEI et AOKI, nous transformons une technologie complexe en solution industrielle fiable et rentable.',
+    listNotes: [
+      'Notre objectif est simple : transformer une technologie complexe en solution industrielle fiable et rentable.',
+    ],
   },
   {
     id: 'conseil',
@@ -46,7 +50,9 @@ const sections = [
     title: 'Conseil & accompagnement industriel',
     image: '/images/conseil.png',
     paragraphs: [
-      'Chaque projet industriel est unique. ERPACK SAS privilégie une approche d\u2019accompagnement sur mesure, fondée sur l\u2019écoute, l\u2019analyse technique et la recherche d\u2019efficacité opérationnelle.',
+      'Chaque projet industriel est unique.',
+      'C\u2019est pourquoi ERPACK SAS privilégie une approche d\u2019accompagnement sur mesure, fondée sur l\u2019écoute, l\u2019analyse technique et la recherche d\u2019efficacité opérationnelle.',
+      'Nous intervenons aussi bien en amont d\u2019un projet qu\u2019en phase d\u2019optimisation d\u2019une ligne existante :',
     ],
     list: [
       'Étude technique',
@@ -54,7 +60,11 @@ const sections = [
       'Optimisation process',
       'Amélioration de productivité',
       'Réduction des pertes matière',
+      'Accompagnement à l\u2019industrialisation',
       'Assistance au démarrage',
+    ],
+    listNotes: [
+      'Notre approche repose sur le terrain, l\u2019expérience et une compréhension fine des contraintes industrielles réelles.',
     ],
   },
   {
@@ -63,8 +73,10 @@ const sections = [
     title: 'Formation technique',
     image: '/images/formation.png',
     paragraphs: [
-      'La transmission du savoir-faire fait partie intégrante de notre mission. Nous proposons des formations destinées aux équipes de production, techniciens, responsables industriels et opérateurs.',
-      'Notre expertise historique sur les équipements ASB / AOKI constitue un atout différenciant : pédagogie concrète, orientée machine, process et résolution de problèmes.',
+      'La transmission du savoir-faire fait également partie intégrante de notre mission.',
+      'ERPACK SAS propose des formations techniques destinées aux équipes de production, techniciens, responsables industriels et opérateurs souhaitant renforcer leur maîtrise des procédés.',
+      'Notre expertise historique sur les équipements ASB / AOKI constitue un atout différenciant fort, particulièrement pour les industriels recherchant une montée en compétence rapide et opérationnelle.',
+      'Nos formations privilégient une pédagogie concrète, orientée machine, process et résolution de problèmes.',
     ],
   },
 ]
@@ -79,6 +91,20 @@ export default function NotreExpertisePage() {
       />
 
       <section className="bg-background">
+        <div className="mx-auto max-w-4xl px-4 pt-16 text-center sm:px-6 lg:px-8 lg:pt-24">
+          <p className="text-pretty text-lg leading-relaxed text-foreground">
+            Depuis plus de 40 ans, ERPACK SAS accompagne les industriels du packaging plastique dans
+            la conception, l&apos;optimisation et l&apos;industrialisation de leurs projets. Notre
+            expertise s&apos;appuie sur une connaissance approfondie des procédés de transformation
+            des matières plastiques, en particulier dans les domaines de l&apos;extrusion soufflage,
+            de l&apos;injection soufflage et de l&apos;ISBM (Injection Stretch Blow Moulding).
+          </p>
+          <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+            Notre métier ne se limite pas à la fourniture d&apos;équipements ou au conseil
+            théorique : nous intervenons au cœur des problématiques industrielles, avec une approche
+            concrète, orientée résultats et performance.
+          </p>
+        </div>
         {sections.map((section, i) => (
           <div
             key={section.id}
@@ -120,11 +146,11 @@ export default function NotreExpertisePage() {
                       ))}
                     </ul>
                   )}
-                  {section.listNote && (
-                    <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
-                      {section.listNote}
+                  {section.listNotes?.map((note) => (
+                    <p key={note} className="mt-5 text-pretty leading-relaxed text-muted-foreground">
+                      {note}
                     </p>
-                  )}
+                  ))}
                 </div>
               </div>
             </div>
@@ -138,9 +164,17 @@ export default function NotreExpertisePage() {
             Une expertise indépendante, pragmatique et orientée résultats
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+            Dans l&apos;industrie, les décisions techniques doivent être fiables, réalistes et
+            économiquement cohérentes.
+          </p>
+          <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+            ERPACK SAS apporte une expertise indépendante, fondée sur plusieurs décennies
+            d&apos;expérience terrain, avec un seul objectif : aider ses clients à sécuriser leurs
+            investissements, améliorer leurs performances et réussir leurs projets industriels.
+          </p>
+          <p className="mt-6 font-serif text-lg italic text-foreground">
             Parce qu&apos;un bon conseil industriel ne se mesure pas au discours, mais aux résultats
-            obtenus. ERPACK SAS aide ses clients à sécuriser leurs investissements, améliorer leurs
-            performances et réussir leurs projets industriels.
+            obtenus.
           </p>
         </div>
       </div>
