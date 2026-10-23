@@ -11,11 +11,11 @@ export function Hero() {
         alt="Machine d'extrusion soufflage dans une usine moderne"
         fill
         priority
-        className="object-cover opacity-25 mix-blend-luminosity"
+        className="object-cover opacity-80 mix-blend-luminosity contrast-125"
         sizes="100vw"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-r from-sky-deep via-sky/90 to-sky/40"
+        className="absolute inset-0 bg-gradient-to-r from-sky-deep/90 via-sky-deep/55 to-sky/10"
         aria-hidden="true"
       />
 
