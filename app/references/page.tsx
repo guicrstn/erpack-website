@@ -35,8 +35,8 @@ const partnerPresentations = [
     title: 'Le savoir-faire japonais de l’ISBM compact',
     text: 'Pionnier de l’injection soufflage bi-orientation en une étape, AOKI propose des machines compactes et précises, particulièrement adaptées aux petites et moyennes séries, aux pots et flacons à col large et aux contenants à parois fines.',
     tags: ['ISBM 1 étape', 'Col large', 'Petites séries'],
-    image: '/images/partner-aoki.png',
-    alt: 'Plateau rotatif d’une machine d’injection soufflage avec pots et flacons PET',
+    image: '/images/partner-aoki.jpg',
+    alt: 'Machine AOKI d’injection soufflage bi-orientation en une étape, carénage vert d’eau et socle crème',
   },
   {
     name: 'Consilhom',
